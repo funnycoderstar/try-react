@@ -1,23 +1,22 @@
 import React, { Component } from 'react';
-import Hello from './components/Hello';
+import List from './components/List';
 
 // App can't be stateless component
+const list = [
+    {
+        text: '题目一',
+    },
+    {
+        text: '题目二',
+    },
+];
 export default class App extends Component {
-    constructor(...args) {
-        super(...args);
-        this.state = {
-            count: 0,
-        };
-    }
-    handleClick = () => {
-        this.setState({ count: this.state.count + 1 });
-    }
     render() {
         return (
             <div>
-                <Hello is={this.state.count % 2 === 0} />
-                <div>{this.state.count}</div>
-                <button onClick={this.handleClick}>click</button>
+                <List
+                    list={list}
+                />
             </div>
         );
     }

@@ -1,6 +1,5 @@
-# react-starter
+# try-react
 
-> personal react starter
 
 ## Build Setup
 
