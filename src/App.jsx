@@ -8,6 +8,9 @@ import List3 from './components/List3';
 import Welcome from './components/Welcome';
 import Goodbye from './components/Goodbye';
 import Child from './components/Child';
+import Controlled from './components/Controlled';
+import UnControlled from './components/UnControlled';
+// import City from './components/City';
 
 // App can't be stateless component
 // const list = [
@@ -53,7 +56,9 @@ export default class App extends Component {
                     :
                     null
                 }
-
+                <Controlled />
+                <UnControlled />
+                {/* <City /> */}
             </div>
         );
     }
